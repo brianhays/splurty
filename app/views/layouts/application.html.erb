@@ -27,7 +27,21 @@
 	<hr />
 	<br class="clear" />
 
-<%= yield %>
+	<div class="container">
+		<%= yield %>
+	</div>
+
+	<div class="footer">
+	  <div class="container">
+	    <div class="col-xs-6">
+        <%= link_to "More motivation please!!...", '#', class: "next-quote" %>
+        </div>
+        <div class="col-xs-6 footer-blurb">
+        Proudly hacked in Atlanta, GA by <a href="splurty-bhays.herokuapp.com">Brian Hays</a><br />
+        Find your daily dose of inspiration here.
+        </div>
+	  </div>
+	</div>
 
 </body>
 </html>
