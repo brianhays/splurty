@@ -7,7 +7,7 @@
     font-style: italic;
     position: relative;
     border-radius: 100%;
-    background: #f84342;
+    background: #27ae60;
     border: 1px solid #F7F7F7;
     width: 80px;
     height: 80px;
@@ -71,4 +71,8 @@ h2 {
   font-style: italic;
   text-align:right;
   font-size:10px;
+}
+
+.logo:hover {
+  text-decoration:none;
 }

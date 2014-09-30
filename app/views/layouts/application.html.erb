@@ -8,19 +8,23 @@
 </head>
 <body>
 	<header>
-	  <div class="circle">
-        <br />
-        - KNOW -
-        <br />
-        YOU
-        <br />
-        CAN!
-      </div>
+	  <div class="col-xs-3">
+      <%= link_to root_path, class: 'logo' do %>
+        <div class="circle">
+          <br />
+          - KNOW -
+          <br />
+          YOU
+          <br />
+          CAN!
+        </div>
+      <% end %>
+    </div>
 	  <div class="col-xs-4 slogan">
 	    Splurting out inspiring awesomeness onto the internet.
 	  </div>
 	  <div class="col-xs-5 links">
-	    <%= link_to 'Contribute', '#' %>
+	    <%= link_to 'Contribute', new_quote_path %>
 	    <%= link_to 'About', '#' %>
 	  </div>
 	</header>
@@ -34,7 +38,7 @@
 	<div class="footer">
 	  <div class="container">
 	    <div class="col-xs-6">
-        <%= link_to "More motivation please!!...", '#', class: "next-quote" %>
+        <%= link_to "More motivation please!!...", root_path, class: "next-quote" %>
         </div>
         <div class="col-xs-6 footer-blurb">
         Proudly hacked in Atlanta, GA by <a href="splurty-bhays.herokuapp.com">Brian Hays</a><br />
